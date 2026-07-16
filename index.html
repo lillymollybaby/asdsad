@@ -19,7 +19,7 @@
           <img class="success-image" src="assets/check.png" alt="" />
         </div>
         <p class="success-message">Ваш перевод совершен</p>
-        <p class="amount">100 ₸</p>
+        <p class="amount"><span id="amount-value">100</span> ₸</p>
       </section>
 
       <section class="details" aria-label="Детали перевода">
@@ -30,7 +30,7 @@
         </button>
         <button class="detail-row favorite" type="button">
           <span class="row-icon" aria-hidden="true"><img class="favorite-image" src="assets/favorite.png" alt="" /></span>
-          <span class="row-copy"><strong>Мирас Ж.</strong><small>Сохранить в Частые</small></span>
+          <span class="row-copy"><strong id="recipient-name">Мирас Ж.</strong><small>Сохранить в Частые</small></span>
           <span class="switch" aria-hidden="true"><span></span></span>
         </button>
 
@@ -40,12 +40,21 @@
       <section class="recommendations" aria-labelledby="recommendations-title">
         <h2 id="recommendations-title">Вас могут заинтересовать</h2>
         <div class="product-grid">
-          <a class="product-card" href="#" aria-label="Бегающий теленок"><img src="assets/cow.PNG" alt="Бегающий теленок" /></a>
-          <a class="product-card" href="#" aria-label="Белые кроссовки"><img src="assets/shoes.PNG" alt="Белые кроссовки" /></a>
+          <button class="product-card edit-trigger" type="button" data-editor="amount" aria-label="Изменить сумму перевода"><img src="assets/cow.PNG" alt="Бегающий теленок" /></button>
+          <button class="product-card edit-trigger" type="button" data-editor="name" aria-label="Изменить имя получателя"><img src="assets/shoes.PNG" alt="Белые кроссовки" /></button>
         </div>
         <button class="back-button" type="button">Вернуться в Переводы</button>
       </section>
     </main>
+    <dialog class="editor-dialog" id="editor-dialog" aria-labelledby="editor-title">
+      <form class="editor-form" id="editor-form">
+        <button class="dialog-close" type="button" aria-label="Закрыть">×</button>
+        <h2 id="editor-title">Изменить</h2>
+        <label id="editor-label" for="editor-input">Значение</label>
+        <input id="editor-input" required autocomplete="off" />
+        <button class="dialog-save" type="submit">Сохранить</button>
+      </form>
+    </dialog>
     <script src="app.js"></script>
   </body>
 </html>
