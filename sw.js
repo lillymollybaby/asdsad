@@ -1,4 +1,4 @@
-const CACHE = 'transfer-success-v17';
+const CACHE = 'transfer-success-v18';
 const ASSETS = ['./', './index.html', './style.css', './app.js', './manifest.json', './assets/kaspi-logo.png', './assets/check-v3.png', './assets/receipt.png', './assets/favorite.png', './assets/banner.png', './assets/cow.PNG', './assets/shoes.PNG'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
