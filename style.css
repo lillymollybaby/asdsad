@@ -30,7 +30,6 @@ h2 { margin: 0 0 42px 33px; font-size: 35px; line-height: 1.1; font-weight: 700;
 /* The composition has a 852 × 1846 reference grid. app.js calculates a
    scale from the real viewport, so every phone size and rotation fits it. */
 @media (max-width: 600px) {
-  :root { --screen-scale: .45; }
   html, body { width: 100%; height: 100%; overflow: hidden; }
   body { min-height: 100dvh; }
   .screen { width: 852px; min-height: 1846px; margin: 0; transform: translateX(var(--screen-offset, 0px)) scale(var(--screen-scale, 1)); transform-origin: top left; }
