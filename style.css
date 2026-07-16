@@ -37,7 +37,7 @@ h2 { margin: 0 0 42px 33px; font-size: 35px; line-height: 1.1; font-weight: 700;
   html, body { width: 100%; height: 100%; overflow: hidden; }
   body { min-height: 100dvh; }
   .screen { width: 100%; min-height: 216.667vw; margin: 0; transform: none; }
-  .success { min-height: 74.413vw; padding: 9.859vw 2.347vw 7.394vw; }
+  .success { min-height: 66.901vw; padding: 6.338vw 2.347vw 7.394vw; }
   h1 { font-size: 4.108vw; letter-spacing: -.094vw; }
   .success-icon { width: 15.023vw; height: 15.023vw; margin: 9.624vw auto 6.69vw; }
   .success-message { font-size: 5.751vw; letter-spacing: -.106vw; }
@@ -54,7 +54,7 @@ h2 { margin: 0 0 42px 33px; font-size: 35px; line-height: 1.1; font-weight: 700;
   .switch { width: 12.207vw; height: 7.981vw; padding: 1.056vw; border-radius: 4.46vw; }
   .switch span { width: 5.869vw; height: 5.869vw; }
   .banner { display: none; }
-  .recommendations { padding: 5.164vw 2.582vw 9.155vw; border-radius: 3.638vw 3.638vw 0 0; }
+  .recommendations { padding: 5.164vw 2.582vw 16.667vw; border-radius: 3.638vw 3.638vw 0 0; }
   h2 { margin: 0 0 4.225vw 3.873vw; font-size: 4.108vw; letter-spacing: -.065vw; }
   .product-grid { gap: .822vw; }
   .product-card img { height: 44.5vw; border-radius: 2.935vw 2.935vw 0 0; object-position: center; }
