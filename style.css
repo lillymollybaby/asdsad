@@ -8,8 +8,8 @@ button { font: inherit; }
 h1 { margin: 0; font-size: 35px; line-height: 1.2; font-weight: 700; letter-spacing: -.8px; }
 .success-icon { position: relative; width: 128px; height: 128px; margin: 82px auto 57px; border-radius: 50%; background: #0a9e00; }
 .check-mark { position: absolute; top: 43px; left: 33px; width: 66px; height: 34px; border-bottom: 9px solid #fff; border-left: 9px solid #fff; border-radius: 3px; transform: rotate(-45deg); transform-origin: center; }
-.success-message { margin: 0; font-size: clamp(32px, 4.35vw, 49px); line-height: 1.12; font-weight: 700; letter-spacing: -.9px; }
-.amount { margin: 31px 0 0; font-size: clamp(60px, 7.5vw, 85px); line-height: 1; font-weight: 700; letter-spacing: -1.8px; }
+.success-message { margin: 0; font-size: 49px; line-height: 1.12; font-weight: 700; letter-spacing: -.9px; }
+.amount { margin: 31px 0 0; font-size: 85px; line-height: 1; font-weight: 700; letter-spacing: -1.8px; }
 .details { padding: 23px 52px 19px; border-top: 16px solid #f4f4f4; border-radius: 0 0 31px 31px; box-shadow: 0 10px 25px rgba(12,12,12,.035); }
 .detail-row { display: flex; align-items: center; width: 100%; min-height: 126px; padding: 0 0 0 19px; border: 0; background: transparent; text-align: left; color: inherit; cursor: pointer; }
 .row-icon { flex: none; width: 45px; color: #d00707; }
