@@ -1,0 +1,30 @@
+:root { color-scheme: only light; font-family: Arial, Helvetica, sans-serif; background: #fff; color: #070707; }
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { -webkit-font-smoothing: antialiased; background: #fff; }
+button { font: inherit; }
+.screen { width: min(100%, 852px); min-height: 100vh; margin: 0 auto; overflow: hidden; background: #fff; }
+.success { min-height: 634px; padding: 84px 20px 63px; text-align: center; }
+h1 { margin: 0; font-size: 35px; line-height: 1.2; font-weight: 700; letter-spacing: -.8px; }
+.success-icon { position: relative; width: 128px; height: 128px; margin: 82px auto 57px; border-radius: 50%; background: #0a9e00; }
+.check-mark { position: absolute; top: 43px; left: 33px; width: 66px; height: 34px; border-bottom: 9px solid #fff; border-left: 9px solid #fff; border-radius: 3px; transform: rotate(-45deg); transform-origin: center; }
+.success-message { margin: 0; font-size: clamp(32px, 4.35vw, 49px); line-height: 1.12; font-weight: 700; letter-spacing: -.9px; }
+.amount { margin: 31px 0 0; font-size: clamp(60px, 7.5vw, 85px); line-height: 1; font-weight: 700; letter-spacing: -1.8px; }
+.details { padding: 23px 52px 19px; border-top: 16px solid #f4f4f4; border-radius: 0 0 31px 31px; box-shadow: 0 10px 25px rgba(12,12,12,.035); }
+.detail-row { display: flex; align-items: center; width: 100%; min-height: 126px; padding: 0 0 0 19px; border: 0; background: transparent; text-align: left; color: inherit; cursor: pointer; }
+.row-icon { flex: none; width: 45px; color: #d00707; }
+.document-icon { position: relative; width: 35px; height: 45px; border: 4px solid currentColor; border-radius: 8px; }
+.document-icon i { position: absolute; left: 7px; right: 7px; height: 3px; background: currentColor; border-radius: 4px; }
+.document-icon i:nth-child(1) { top: 9px; }.document-icon i:nth-child(2) { top: 18px; }.document-icon i:nth-child(3) { top: 27px; }
+.row-copy { display: flex; flex: 1; flex-direction: column; padding-left: 27px; gap: 12px; }
+.row-copy strong { font-size: 35px; line-height: .98; font-weight: 400; letter-spacing: -.65px; }.row-copy small { font-size: 24px; line-height: 1; color: #666; letter-spacing: -.36px; }
+.chevron { width: 21px; height: 21px; margin-right: 10px; border-top: 4px solid #a0a0a0; border-right: 4px solid #a0a0a0; transform: rotate(45deg); }
+.star-icon { font-size: 62px; line-height: 1; font-family: Arial, sans-serif; font-weight: 700; }
+.switch { display: flex; align-items: center; width: 104px; height: 68px; padding: 9px; border-radius: 38px; background: #e3e3e3; }.switch span { width: 50px; height: 50px; border-radius: 50%; background: #fff; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
+.banner { display: block; width: 100%; height: 237px; margin-top: 9px; border-radius: 24px; object-fit: cover; }
+.recommendations { margin-top: 0; padding: 44px 22px 94px; border-radius: 31px 31px 0 0; background: linear-gradient(120deg, #fff 0%, #fafafa 100%); }
+h2 { margin: 0 0 42px 33px; font-size: 35px; line-height: 1.1; font-weight: 700; letter-spacing: -.55px; }
+.product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }.product-card { display: block; height: 251px; overflow: hidden; border-radius: 25px 25px 0 0; background: #f3f3f3; }.product-card img { width: 100%; height: 100%; object-fit: cover; object-position: center 26%; }.product-card:nth-child(2) img { object-position: 50% 50%; }
+.back-button { width: calc(100% - 52px); height: 129px; margin: 48px 26px 0; border: 0; border-radius: 28px; color: #fff; background: #0868e7; font-size: 34px; font-weight: 400; letter-spacing: -.5px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.1); cursor: pointer; }
+.back-button:active, .detail-row:active { transform: scale(.99); }
+@media (max-width: 600px) { .success { min-height: 550px; padding-top: 60px; }.success-icon { width: 112px; height: 112px; margin: 68px auto 48px; }.details { padding: 18px 22px; }.detail-row { padding-left: 10px; }.row-copy { padding-left: 18px; }.row-copy strong { font-size: 27px; }.row-copy small { font-size: 19px; }.banner { height: auto; aspect-ratio: 3.2 / 1; border-radius: 20px; }.recommendations { padding: 36px 16px 64px; } h2 { margin-left: 16px; margin-bottom: 30px; font-size: 29px; }.product-card { height: 190px; border-radius: 20px 20px 0 0; }.back-button { width: calc(100% - 32px); height: 105px; margin: 38px 16px 0; border-radius: 24px; font-size: 28px; } }

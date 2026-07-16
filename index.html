@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Переводы</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="screen">
+      <section class="success" aria-labelledby="page-title">
+        <h1 id="page-title">Переводы</h1>
+        <div class="success-icon" aria-label="Перевод выполнен">
+          <span class="check-mark" aria-hidden="true"></span>
+        </div>
+        <p class="success-message">Ваш перевод совершен</p>
+        <p class="amount">100 ₸</p>
+      </section>
+
+      <section class="details" aria-label="Детали перевода">
+        <button class="detail-row receipt" type="button">
+          <span class="row-icon document-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="row-copy"><strong>Показать квитанцию</strong><small>Квитанция сохранена в Истории</small></span>
+          <span class="chevron" aria-hidden="true"></span>
+        </button>
+        <button class="detail-row favorite" type="button">
+          <span class="row-icon star-icon" aria-hidden="true">☆</span>
+          <span class="row-copy"><strong>Мирас Ж.</strong><small>Сохранить в Частые</small></span>
+          <span class="switch" aria-hidden="true"><span></span></span>
+        </button>
+
+        <img class="banner" src="assets/banner.png" alt="Новинка этого лета — яркие вкусы холодного чая" />
+      </section>
+
+      <section class="recommendations" aria-labelledby="recommendations-title">
+        <h2 id="recommendations-title">Вас могут заинтересовать</h2>
+        <div class="product-grid">
+          <a class="product-card" href="#" aria-label="Бегающий теленок"><img src="assets/cow.PNG" alt="Бегающий теленок" /></a>
+          <a class="product-card" href="#" aria-label="Белые кроссовки"><img src="assets/shoes.PNG" alt="Белые кроссовки" /></a>
+        </div>
+        <button class="back-button" type="button">Вернуться в Переводы</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

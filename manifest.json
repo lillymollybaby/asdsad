@@ -1,0 +1,12 @@
+{
+  "name": "Переводы",
+  "short_name": "Переводы",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "ru",
+  "icons": [
+    { "src": "assets/check.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
