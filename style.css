@@ -6,15 +6,14 @@ button { font: inherit; }
 .screen { width: min(100%, 852px); min-height: 100vh; margin: 0 auto; overflow: hidden; background: #fff; }
 .success { min-height: 634px; padding: 84px 20px 63px; text-align: center; }
 h1 { margin: 0; font-size: 35px; line-height: 1.2; font-weight: 700; letter-spacing: -.8px; }
-.success-icon { position: relative; width: 128px; height: 128px; margin: 82px auto 57px; border-radius: 50%; background: #0a9e00; }
-.check-mark { position: absolute; top: 43px; left: 33px; width: 66px; height: 34px; border-bottom: 9px solid #fff; border-left: 9px solid #fff; border-radius: 3px; transform: rotate(-45deg); transform-origin: center; }
+.success-icon { width: 128px; height: 128px; margin: 82px auto 57px; }
+.success-svg { display: block; width: 100%; height: 100%; }
 .success-message { margin: 0; font-size: 49px; line-height: 1.12; font-weight: 700; letter-spacing: -.9px; }
 .amount { margin: 31px 0 0; font-size: 85px; line-height: 1; font-weight: 700; letter-spacing: -1.8px; }
 .details { padding: 23px 52px 19px; border-top: 16px solid #f4f4f4; border-radius: 0 0 31px 31px; box-shadow: 0 10px 25px rgba(12,12,12,.035); }
 .detail-row { display: flex; align-items: center; width: 100%; min-height: 126px; padding: 0 0 0 19px; border: 0; background: transparent; text-align: left; color: inherit; cursor: pointer; }
-.row-icon { display: grid; flex: none; width: 45px; height: 45px; place-items: center; }
-.receipt-svg { width: 35px; height: 45px; }
-.favorite-svg { width: 45px; height: 45px; }
+.row-icon { display: grid; flex: none; width: 45px; height: 45px; place-items: center; color: #d42d2e; }
+.star-icon { width: 45px; height: 45px; }
 .document-icon { position: relative; width: 35px; height: 45px; border: 4px solid currentColor; border-radius: 8px; }
 .document-icon i { position: absolute; left: 7px; right: 7px; height: 3px; background: currentColor; border-radius: 4px; }
 .document-icon i:nth-child(1) { top: 9px; }.document-icon i:nth-child(2) { top: 18px; }.document-icon i:nth-child(3) { top: 27px; }
@@ -37,14 +36,17 @@ h2 { margin: 0 0 42px 33px; font-size: 35px; line-height: 1.1; font-weight: 700;
   .success { min-height: 74.413vw; padding: 9.859vw 2.347vw 7.394vw; }
   h1 { font-size: 4.108vw; letter-spacing: -.094vw; }
   .success-icon { width: 15.023vw; height: 15.023vw; margin: 9.624vw auto 6.69vw; }
-  .check-mark { top: 5.047vw; left: 3.873vw; width: 7.746vw; height: 3.991vw; border-width: 0 0 1.056vw 1.056vw; border-radius: .352vw; }
   .success-message { font-size: 5.751vw; letter-spacing: -.106vw; }
   .amount { margin-top: 3.639vw; font-size: 9.977vw; letter-spacing: -.211vw; }
   .details { padding: 2.7vw 6.103vw 2.23vw; border-top-width: 1.878vw; border-radius: 0 0 3.638vw 3.638vw; }
   .detail-row { min-height: 14.789vw; padding-left: 2.23vw; }
   .row-icon { width: 5.282vw; height: 5.282vw; }
-  .receipt-svg { width: 4.108vw; height: 5.282vw; }
-  .favorite-svg { width: 5.282vw; height: 5.282vw; }
+  .document-icon { width: 4.108vw; height: 5.282vw; border-width: .469vw; border-radius: .939vw; }
+  .document-icon i { left: .822vw; right: .822vw; height: .352vw; }
+  .document-icon i:nth-child(1) { top: 1.056vw; }
+  .document-icon i:nth-child(2) { top: 2.113vw; }
+  .document-icon i:nth-child(3) { top: 3.169vw; }
+  .star-icon { width: 5.282vw; height: 5.282vw; }
   .row-copy { padding-left: 3.169vw; gap: 1.408vw; }
   .row-copy strong { font-size: 4.108vw; letter-spacing: -.076vw; }
   .row-copy small { font-size: 2.817vw; letter-spacing: -.042vw; }

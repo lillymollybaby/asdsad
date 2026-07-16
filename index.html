@@ -16,7 +16,7 @@
       <section class="success" aria-labelledby="page-title">
         <h1 id="page-title">Переводы</h1>
         <div class="success-icon" aria-label="Перевод выполнен">
-          <span class="check-mark" aria-hidden="true"></span>
+          <img class="success-svg" src="assets/success.svg" alt="" />
         </div>
         <p class="success-message">Ваш перевод совершен</p>
         <p class="amount">100 ₸</p>
@@ -24,12 +24,14 @@
 
       <section class="details" aria-label="Детали перевода">
         <button class="detail-row receipt" type="button">
-          <span class="row-icon" aria-hidden="true"><img class="receipt-svg" src="assets/receipt.svg" alt="" /></span>
+          <span class="row-icon document-icon" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="row-copy"><strong>Показать квитанцию</strong><small>Квитанция сохранена в Истории</small></span>
           <span class="chevron" aria-hidden="true"></span>
         </button>
         <button class="detail-row favorite" type="button">
-          <span class="row-icon" aria-hidden="true"><img class="favorite-svg" src="assets/favorite.svg" alt="" /></span>
+          <span class="row-icon" aria-hidden="true">
+            <svg class="star-icon" viewBox="14 18 25 25" fill="none"><path d="M26.68 22.14l1.81 5.56c.06.19.23.31.43.31h5.84c.44 0 .62.56.27.82l-4.73 3.44c-.16.12-.22.32-.16.51l1.81 5.56c.14.42-.34.76-.7.51l-4.73-3.44a.43.43 0 00-.53 0l-4.73 3.44c-.35.26-.83-.09-.7-.51l1.81-5.56c.06-.19 0-.39-.16-.51l-4.73-3.44c-.35-.26-.17-.82.27-.82h5.84c.2 0 .37-.13.43-.31l1.81-5.56c.14-.42.72-.42.86 0z" stroke="currentColor" stroke-width="1.2" stroke-miterlimit="10"/></svg>
+          </span>
           <span class="row-copy"><strong>Мирас Ж.</strong><small>Сохранить в Частые</small></span>
           <span class="switch" aria-hidden="true"><span></span></span>
         </button>
