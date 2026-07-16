@@ -1,5 +1,5 @@
-const CACHE = 'transfer-success-v13';
-const ASSETS = ['./', './index.html', './style.css', './app.js', './manifest.json', './assets/check.png', './assets/receipt.png', './assets/favorite.png', './assets/banner.png', './assets/cow.PNG', './assets/shoes.PNG'];
+const CACHE = 'transfer-success-v14';
+const ASSETS = ['./', './index.html', './style.css', './app.js', './manifest.json', './assets/check-v2.png', './assets/receipt.png', './assets/favorite.png', './assets/banner.png', './assets/cow.PNG', './assets/shoes.PNG'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
 self.addEventListener('fetch', event => {
