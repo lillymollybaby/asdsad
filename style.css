@@ -32,10 +32,10 @@ h2 { margin: 0 0 42px 33px; font-size: 35px; line-height: 1.1; font-weight: 700;
 .back-button:active, .detail-row:active { transform: scale(.99); }
 .editor-dialog { width: min(430px, calc(100% - 40px)); padding: 0; border: 0; border-radius: 26px; color: #090909; box-shadow: 0 16px 48px rgba(0,0,0,.25); }.editor-dialog::backdrop { background: rgba(0,0,0,.42); }.editor-form { position: relative; display: grid; gap: 18px; padding: 31px 26px 27px; }.editor-form h2 { margin: 0; font-size: 28px; }.editor-form label { font-size: 17px; color: #666; }.editor-form input { width: 100%; height: 54px; padding: 0 15px; border: 2px solid #dedede; border-radius: 13px; outline: none; font-size: 24px; }.editor-form input:focus { border-color: #0868e7; }.dialog-save { height: 54px; border: 0; border-radius: 14px; color: #fff; background: #0868e7; font-size: 19px; cursor: pointer; }.dialog-close { position: absolute; top: 14px; right: 16px; width: 35px; height: 35px; border: 0; border-radius: 50%; background: #f1f1f1; color: #333; font-size: 27px; line-height: 1; cursor: pointer; }
 
-.receipt-page { position: fixed; inset: 0; z-index: 999; display: flex; justify-content: center; align-items: center; padding: 24px; background: rgba(0,0,0,.24); }
+.receipt-page { position: fixed; inset: 0; z-index: 999; display: flex; justify-content: center; align-items: center; padding: 0; background: rgba(0,0,0,.24); }
 .receipt-page[hidden] { display: none; }
-.receipt-shell { width: min(100%, 920px); max-width: 100%; display: flex; justify-content: center; align-items: center; position: relative; }
-.receipt-svg { width: 100%; max-height: calc(100vh - 80px); height: auto; display: block; border-radius: 32px; overflow: hidden; background: #fff; }
+.receipt-shell { width: 100vw; height: 100vh; max-width: 100%; display: flex; justify-content: center; align-items: center; position: relative; }
+.receipt-svg { width: auto; max-width: calc(100vw - 32px); max-height: calc(100vh - 32px); height: auto; display: block; border-radius: 32px; overflow: hidden; background: #fff; }
 .receipt-close { position: absolute; top: 18px; right: 18px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: #fff; color: #333; font-size: 24px; line-height: 1; cursor: pointer; box-shadow: 0 10px 25px rgba(0,0,0,.12); }
 /* The composition has a 852 × 1846 reference grid. app.js calculates a
    scale from the real viewport, so every phone size and rotation fits it. */
