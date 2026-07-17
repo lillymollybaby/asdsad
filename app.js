@@ -5,6 +5,7 @@ const title = document.querySelector('#editor-title');
 const label = document.querySelector('#editor-label');
 const amount = document.querySelector('#amount-value');
 const name = document.querySelector('#recipient-name');
+const receiptPage = document.querySelector('#receipt-page');
 let activeEditor = 'amount';
 
 const editorConfig = {
@@ -24,6 +25,18 @@ document.querySelectorAll('.edit-trigger').forEach(trigger => {
     input.focus();
     input.select();
   });
+});
+
+document.querySelector('.receipt').addEventListener('click', () => {
+  receiptPage.hidden = false;
+});
+
+document.querySelector('.receipt-close').addEventListener('click', () => {
+  receiptPage.hidden = true;
+});
+
+receiptPage.addEventListener('click', event => {
+  if (event.target === receiptPage) receiptPage.hidden = true;
 });
 
 document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
